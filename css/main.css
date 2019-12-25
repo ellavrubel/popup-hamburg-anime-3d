@@ -74,7 +74,6 @@ li.header__menu{
 
 }
 
-
 @media (max-width: 768px){
     .header__menu{
         display: none;
@@ -101,6 +100,5 @@ li.header__menu{
     .hamb{
         display: block;
     }
-
 
 }
