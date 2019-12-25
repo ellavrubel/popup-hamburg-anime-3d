@@ -1,0 +1,106 @@
+/* Кнопка наверх*/
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    visibility: hidden;
+}
+#button:hover {
+    cursor: pointer;
+}
+#button::after {
+    content: "\f077";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+#button.show{
+    visibility: visible;
+    transition: background-color .3s, opacity .5s;
+}
+
+/* Menu Hamburger */
+
+ul, li, a {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 90px;
+}
+.logo{
+    padding-top: 35px;
+}
+ul.header__nav{
+    padding-top: 35px;
+}
+li.header__menu{
+    margin-right: 20px;
+}
+.header__menu a {
+    text-transform: uppercase;
+    font-size: calc(0.5rem + 0.22vw);
+    font-weight: bold;
+    color: #777777;
+    letter-spacing: 0.2em;
+}
+.header__menu a:hover{
+    text-decoration: none;
+}
+.header__menu i {
+    font-size: 15px;
+    font-weight: bold;
+    color: #777777;
+}
+.active a{
+    color: #000;
+}
+.menu{
+    font-size: 30px;
+    padding-top: 30px;
+    display: none;
+
+}
+
+
+@media (max-width: 768px){
+    .header__menu{
+        display: none;
+    }
+    ul.header__nav{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.81);
+        position: relative;
+        top:-55px;
+        right: 0;
+        padding: 25px;
+    }
+    li.header__menu{
+        margin-right: 0;
+    }
+
+    .header__menu a, .header__menu i {
+        margin-top: 20px;
+        color: #fff;
+    }
+    .menu__toggle{
+        display: block;
+    }
+    .hamb{
+        display: block;
+    }
+
+
+}
