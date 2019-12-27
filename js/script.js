@@ -58,8 +58,11 @@ $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
-        slideSpeed : 500,
-        center: true,
+        rtl: true,
+        // smartSpeed : 900,
+        // center: true,
+        dotsEach: 3,
+        dotsSpeed: 1500,
         itemsScaleUp:true,
         autoHeight:true,
 
@@ -68,13 +71,15 @@ $(document).ready(function () {
                 items:1
             },
             600:{
-                items:3
+                items:2
             },
             1000:{
-                items:5
+                items:3
             }
         }
     })
+
+// 3D effects
 
 
 

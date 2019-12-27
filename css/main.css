@@ -77,15 +77,17 @@ li.header__menu{
     padding-top: 30px;
     display: none;
 }
+.menu__toggle i{
+    color: #4e555b;
+}
 
 /* Popup Window */
 
 .btn{
-    width: 250px;
-    height: 65px;
+    width: 100px;
+    height: 35px;
     background-color: #9fcdff;
 }
-
 .popup{
     position: fixed;
     top: 0;
@@ -135,21 +137,21 @@ li.header__menu{
     height: 300px;
 }
 
+/* 3D Effects */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cards{
+    padding:4rem 0;
+}
+.icon{
+    font-size: 100px;
+    align-items: center;
+    color: rgba(126, 167, 18, 0.84);
+}
+.icon:hover,
+.owl-carousel .item:hover{
+    transform: scale(1.5) scaleZ(1.0) rotateX(60deg) rotateY(9deg);
+    transition: all 1s ease;
+}
 
 @media (max-width: 768px){
     .header__menu{
@@ -159,10 +161,10 @@ li.header__menu{
         text-align: center;
         background-color: rgba(0, 0, 0, 0.81);
         position: relative;
-        top:-55px;
+        top:-75px;
         right: 0;
         padding: 25px;
-
+        z-index: 999;
     }
     li.header__menu{
         margin-right: 0;
@@ -174,6 +176,7 @@ li.header__menu{
     }
     .menu__toggle{
         display: block;
+        padding: 0;
     }
     .hamb{
         display: block;
